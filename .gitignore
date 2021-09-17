@@ -12,3 +12,5 @@ test/sdkconfig
 .DS_Store
 bin
 wifi/bin
+dist/tools/vaina/target/*
+.rustc*
