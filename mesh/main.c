@@ -53,8 +53,12 @@ static int _init_slipdev(void);
  *
  * @{
  */
-#define IEEE802154_IF (8)
-#define SLIPDEV_IF    (7)
+
+/*
+ * 
+ */
+#define SLIPDEV_IF    (8)
+#define IEEE802154_IF (7)
 /** @} */
 
 #define MAIN_QUEUE_SIZE     (8)
@@ -62,6 +66,7 @@ static msg_t _main_msg_queue[MAIN_QUEUE_SIZE];
 
 int main(void)
 {
+    
     if (_init_ieee802154() < 0) {
         printf("Error: Couldn't initialize IEEE 802.15.4g device correctly.\n");
     }
@@ -70,7 +75,7 @@ int main(void)
         printf("Error: Couldn't initialize SLIP correctly.\n");
         return -1;
     }
-
+    
     puts("Welcome to Turpial Radio!");
 
     msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);

@@ -1,5 +1,5 @@
 APPLICATION = mesh-subsys
-BOARD ?= turpial-cc1312
+BOARD ?= m4a-mb
 
 EXTERNAL_BOARD_DIRS ?= $(CURDIR)/../boards
 EXTERNAL_MODULE_DIRS += $(CURDIR)/../core
@@ -67,4 +67,8 @@ sliptty:
   TERMFLAGS ?= $(FLAGS_EXTRAS) $(IPV6_PREFIX) $(PORT) $(SLIP_BAUDRATE)
 endif
 
+
+CFLAGS += -Wno-unused-parameter
+CFLAGS += -Wno-unused-variable
+CFLAGS += -Wno-unused-function
 include $(RIOTBASE)/Makefile.include
