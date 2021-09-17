@@ -1,0 +1,11 @@
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/yaml_rust-d741e09efbebe07d.rmeta: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/yaml.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/scanner.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/parser.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/emitter.rs
+
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/libyaml_rust-d741e09efbebe07d.rlib: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/yaml.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/scanner.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/parser.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/emitter.rs
+
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/yaml_rust-d741e09efbebe07d.d: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/yaml.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/scanner.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/parser.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/emitter.rs
+
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/lib.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/yaml.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/scanner.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/parser.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.3.5/src/emitter.rs:

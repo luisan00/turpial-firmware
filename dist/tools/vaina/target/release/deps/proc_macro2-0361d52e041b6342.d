@@ -1,0 +1,11 @@
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/proc_macro2-0361d52e041b6342.rmeta: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/strnom.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/detection.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/fallback.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/wrapper.rs
+
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/libproc_macro2-0361d52e041b6342.rlib: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/strnom.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/detection.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/fallback.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/wrapper.rs
+
+/home/luisan00/github/luisan00/turpial-firmware/dist/tools/vaina/target/release/deps/proc_macro2-0361d52e041b6342.d: /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/lib.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/strnom.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/detection.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/fallback.rs /home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/wrapper.rs
+
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/lib.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/strnom.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/detection.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/fallback.rs:
+/home/luisan00/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.12/src/wrapper.rs:

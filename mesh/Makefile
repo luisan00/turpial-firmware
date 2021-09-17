@@ -63,7 +63,7 @@ sliptty:
 
 # Configure terminal parameters
   TERMDEPS += host-tools
-  TERMPROG ?= sudo sh $(CURDIR)/dist/tools/vaina/start_network.sh
+  TERMPROG ?= sudo sh $(CURDIR)/../dist/tools/vaina/start_network.sh
   TERMFLAGS ?= $(FLAGS_EXTRAS) $(IPV6_PREFIX) $(PORT) $(SLIP_BAUDRATE)
 endif
 

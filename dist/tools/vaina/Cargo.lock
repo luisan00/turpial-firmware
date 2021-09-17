@@ -78,13 +78,13 @@ dependencies = [
 [[package]]
 name = "libc"
 version = "0.2.69"
-source = "git+https://github.com/rust-lang/libc/#87de9103f5b48d3f8717f14646bac1dfe9495233"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "99e85c08494b21a9054e7fe1374a732aeadaff3980b6990b94bfd3a70f690005"
 
 [[package]]
 name = "libc"
 version = "0.2.69"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "99e85c08494b21a9054e7fe1374a732aeadaff3980b6990b94bfd3a70f690005"
+source = "git+https://github.com/rust-lang/libc/#87de9103f5b48d3f8717f14646bac1dfe9495233"
 
 [[package]]
 name = "nix"
