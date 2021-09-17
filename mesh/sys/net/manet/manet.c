@@ -33,6 +33,7 @@ int manet_netif_ipv6_group_join(gnrc_netif_t *netif)
     if (res < 0) {
         return -1;
     }
+    puts("Joined on netif!");
 
     return 0;
 }

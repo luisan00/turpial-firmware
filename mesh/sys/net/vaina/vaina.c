@@ -26,7 +26,7 @@
 #include "net/aodvv2/rcs.h"
 #endif
 
-#define ENABLE_DEBUG (0)
+#define ENABLE_DEBUG (1)
 #include "debug.h"
 
 #if ENABLE_DEBUG == 1
@@ -235,6 +235,7 @@ int vaina_init(gnrc_netif_t *netif)
     memcpy(&_local.addr, &group, sizeof(ipv6_addr_t));
     _local.netif = netif->pid;
     _local.port = CONFIG_VAINA_PORT;
+
     if (sock_udp_create(&_sock, &_local, NULL, 0) < 0) {
         DEBUG_PUTS("vaina: couldn't create UDP socket");
         return -1;

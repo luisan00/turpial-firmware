@@ -24,12 +24,12 @@
 
 #include <stdio.h>
 
-#include "shell.h"
 #include "msg.h"
+#include "shell.h"
 
 #include "net/aodvv2.h"
-#include "net/manet.h"
 #include "net/gnrc/ipv6/nib.h"
+#include "net/manet.h"
 #include "net/vaina.h"
 
 #include "shell_extended.h"
@@ -54,18 +54,18 @@ static int _init_slipdev(void);
  * @{
  */
 
-/*
- * 
- */
-#define SLIPDEV_IF    (8)
-#define IEEE802154_IF (7)
+
+#define SLIPDEV_IF (8)          // Wired
+#define IEEE802154_IF (7)       // 2.4 GHz
+#define IEEE802154_SUB_IF (6)   // SUB-GHz
 /** @} */
 
-#define MAIN_QUEUE_SIZE     (8)
+#define MAIN_QUEUE_SIZE (8)
 static msg_t _main_msg_queue[MAIN_QUEUE_SIZE];
 
 int main(void)
 {
+    msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
     
     if (_init_ieee802154() < 0) {
         printf("Error: Couldn't initialize IEEE 802.15.4g device correctly.\n");
@@ -75,22 +75,22 @@ int main(void)
         printf("Error: Couldn't initialize SLIP correctly.\n");
         return -1;
     }
-    
-    puts("Welcome to Turpial Radio!");
 
-    msg_init_queue(_main_msg_queue, MAIN_QUEUE_SIZE);
+    puts("Welcome to Turpial Radio!\n");
+
+    
 
     /* Start shell */
     char line_buf[SHELL_DEFAULT_BUFSIZE];
     shell_run(shell_extended_commands, line_buf, SHELL_DEFAULT_BUFSIZE);
-
+    
     /* Should be never reached */
     return 0;
 }
 
 static int _init_ieee802154(void)
 {
-    gnrc_netif_t *ieee802154_netif = gnrc_netif_get_by_pid(IEEE802154_IF);
+    gnrc_netif_t* ieee802154_netif = gnrc_netif_get_by_pid(IEEE802154_IF);
     if (ieee802154_netif == NULL) {
         printf("Error: Couldn't find IEEE 802.154.g device.\n");
         return -1;
@@ -119,7 +119,7 @@ static int _init_ieee802154(void)
 
 static int _init_slipdev(void)
 {
-    gnrc_netif_t *slipdev_netif = gnrc_netif_get_by_pid(SLIPDEV_IF);
+    gnrc_netif_t* slipdev_netif = gnrc_netif_get_by_pid(SLIPDEV_IF);
     if (slipdev_netif == NULL) {
         printf("Error: We need a wired interface to send packets to.\n");
         return -1;
@@ -132,8 +132,7 @@ static int _init_slipdev(void)
     /* Add known fe80::2 local address so a computer/esp32 can know how to
      * configure the routing table. */
     ipv6_addr_t addr = {
-        .u8 = { 0xfe, 0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2 }
-    };
+        .u8 = {0xfe, 0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2}};
 
     if (gnrc_netif_ipv6_addr_add(slipdev_netif, &addr, 128, 0) != sizeof(ipv6_addr_t)) {
         printf("Error: Couldn't setup SLIP local address.\n");

@@ -2,7 +2,7 @@
 
 TUN=sl0
 PREFIX=64
-TUN_GLB="fc00:db8::1" # Dirección global de prueba
+TUN_GLB="fc00:db9::1" # Dirección global de prueba
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 

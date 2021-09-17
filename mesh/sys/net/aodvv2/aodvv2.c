@@ -37,7 +37,7 @@
 #include "aodvv2_reader.h"
 #include "aodvv2_writer.h"
 
-#define ENABLE_DEBUG (0)
+#define ENABLE_DEBUG (1)
 #include "debug.h"
 
 #if ENABLE_DEBUG == 1
@@ -401,7 +401,7 @@ int aodvv2_send_rreq(aodvv2_message_t *pkt,
 {
     aodvv2_msg_t *msg = malloc(sizeof(aodvv2_msg_t));
     if (msg == NULL) {
-        DEBUG("aodvv2: out of memory!\n");
+        DEBUG("aodvv2-send_rreq: out of memory!\n");
         return -1;
     }
 
@@ -429,7 +429,7 @@ int aodvv2_send_rrep(aodvv2_message_t *pkt,
 {
     aodvv2_msg_t *msg = malloc(sizeof(aodvv2_msg_t));
     if (msg == NULL) {
-        DEBUG("aodvv2: out of memory!\n");
+        DEBUG("aodvv2-send_rrep: out of memory!\n");
         return -1;
     }
 
